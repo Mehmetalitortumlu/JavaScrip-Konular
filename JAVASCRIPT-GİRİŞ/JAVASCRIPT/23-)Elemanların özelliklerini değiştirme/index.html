@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemanlların özellikleri değiştirme</title>
+    <style>
+       img{
+        width: 250px;
+       }
+       button{
+        display: block;
+       }
+    </style>
+</head>
+<body>
+    
+    <img id="logo" onclick="eskiResim()" src="img/coder.jpg" alt="" title="coder">
+   <button onclick="yeniResim()">Resmi Değiştir </button>
+        
+    <script>
+        function yeniResim(){
+            var logomuz=document.getElementById("logo");
+         logomuz.src="img/laptop.jpg"
+         logomuz.title="laptop"
+        }
+        function eskiResim(){
+            var logomuz=document.getElementById("logo");
+         logomuz.src="img/coder.jpg"
+         logomuz.title="coder"
+        }
+
+    </script>
+     
+</body>
+</html>

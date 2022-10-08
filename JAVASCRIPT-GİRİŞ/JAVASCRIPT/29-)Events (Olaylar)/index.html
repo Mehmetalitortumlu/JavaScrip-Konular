@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events(olaylar)</title>
+    <style>
+        img {
+            width: 250px;
+        }
+
+        div {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <p onclick="saatbasla()">Tarih</p>
+    <p></p>
+    <!-- <div id="div1">
+        Mehmet Ali
+    </div> -->
+
+    <!-- <img src="img/coder.jpg" alt=""> -->
+
+    <input class="inputCSS" type="text" value="Bir isim giriniz!">
+    <script>
+
+
+        // var divimiz = document.getElementById("div1");
+
+        // var resim = document.getElementsByTagName("img")[0];
+
+        // resim.onload = function () {
+        //     alert("Resim Yüklendi");
+        // }
+
+     var tarihParagrafi=document.getElementsByTagName("p")[1];
+     function saatbasla(){
+        setInterval(tarihiGoster,1000)
+     }
+            function tarihiGoster(){
+                var tarih=new Date();
+                tarihParagrafi.innerHTML= tarih.getHours()+" "+tarih.getMinutes()+ " "+tarih.getSeconds()
+            }
+
+
+        var divimiz = document.getElementById("div1");
+
+        var resim = document.getElementsByTagName("img")[0];
+
+        /*divimiz.onclick=function(){
+             divimiz.innerHTML="Değişti"
+             divimiz.style.color="red"
+         };
+         resim.onclick = function () {
+             alert("Resme Tıklandı");
+             resim.src="img/laptop.jpgs"
+         } */
+
+        var input = document.getElementsByClassName("inputCSS")[0];
+
+            // input.onchange=function(){
+            // input.value=input.value.toUpperCase()
+            // } 
+
+        /* input.onkeyup=function(){
+         input.value=input.value.toUpperCase()
+         };
+         input.onkeydown=function(){
+         input.value=input.value.toUpperCase()};
+          */
+           /* input.onblur=function(){
+                input.value="degisti";
+            }
+            input.onfocus=function(){
+                input.value="focuslandı";
+            } */
+        /* divimiz.onmouseover = function(){
+             divimiz.innerHTML="mouse üzerine geldi;"
+         };
+         divimiz.onmouseout=function(){
+             divimiz.innerHTML="Mehmet Ali"
+         };
+         divimiz.onmousedown=function(){
+             divimiz.innerHTML="MOUSE'A BASILDI"
+         };
+         divimiz.onmouseup=function(){
+             divimiz.innerHTML="MOUSE'DAN EL Kaldırıldı"
+         };*/
+    </script>
+</body>
+
+</html>

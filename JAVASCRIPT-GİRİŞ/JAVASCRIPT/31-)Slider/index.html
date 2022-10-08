@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        img {
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="oncekiFoto()"> Önceki</button>
+    <img id="slider" src="img/coder.jpg" alt="">
+    <button onclick="sonrakiFoto()"> Sonraki</button>
+
+
+
+
+    <script>
+
+        var resimeler = [
+            "img/coder.jpg",
+            "img/laptop.jpg",
+            "img/perfect.jpg"
+        ];
+
+        var mevcutResimIndex = 0;
+
+        function oncekiFoto() {
+            var slider = document.getElementById("slider");
+            mevcutResimIndex--;
+            if (mevcutResimIndex < 0) {
+                mevcutResimIndex = resimeler.length -1
+            }
+
+            slider.src=resiameler[mevcutResimIndex]
+        }
+
+        function sonrakiFoto() {
+            var slider = document.getElementById("slider");
+            mevcutResimIndex++;
+            if(mevcutResimIndex >=resimeler.length){
+                mevcutResimIndex=0;
+            }
+            slider.src=resimeler[mevcutResimIndex]
+
+        }
+
+    </script>
+</body>
+
+</html>

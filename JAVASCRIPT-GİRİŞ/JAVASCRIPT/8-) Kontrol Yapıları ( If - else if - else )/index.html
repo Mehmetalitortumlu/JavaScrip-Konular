@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kontrol Yapıları ( If - else if - else )</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+        var ders = prompt("Lütfen görmek istediğiniz dersin sayisini yaziniz 1- matematik 2 - fen -3 kimya")
+        
+        if(ders ==1){
+            document.write("<h1>Matematik<h1><p> Matematik dersine hoşgeldiniz. </p> <ul> <li>Yaş Problemleri </li> <li> Havuz Problemleri</li><li>Algoritma </li> </ul>")
+        }
+        else if(ders ==2) {
+            document.write("<h1>Kimya<h1><p> Kimya dersine hoşgeldiniz. </p> <ul> <li>Elementler </li> <li> Element Tablosu</li><li>Sodyum elementi </li> </ul>")
+        }else if(ders ==3) {
+            document.write("<h1>Fizik<h1><p> Fizik dersine hoşgeldiniz. </p> <ul> <li>Sürtünme Kuvveti </li> <li> Sürtünme Katsayısı</li><li>Yer Çekimi </li> </ul>")
+        }
+        else {
+            alert("Böyle bir ders yok lütfen 0 ve 4 arası sayı yazalım")
+        }
+
+
+
+    </script>
+</body>
+</html>

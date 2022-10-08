@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemanları Seçme İşlemleri</title>
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <script>
+
+        // document.getElementsByClassName("baslik")[0].innerHTML="<p>Mehmet</p>"
+        // document.getElementsByClassName("baslik")[1].innerHTML="<p>Mehmet</p>"
+        // document.getElementsByTagName("div")[0].innerHTML="div1"
+        // document.getElementsByTagName("div")[1].innerHTML="div2" tek tek eklemek yerine aşağıdaki gibi yapabiliriz.
+
+        // var divlerimiz = document.getElementsByTagName('div');
+        // for(var i=0; i<divlerimiz.length;i++){
+        //     divlerimiz[i].innerHTML="div" + i
+        // }
+
+        // var divler=document.body;
+        // for(i=0; i<5;i++){
+        //     divler.innerHTML+="<div>1 </div>"
+        // }
+
+        // var divsayisi=document.getElementsByTagName('div');
+        // for(i=0;i<divsayisi.length;i++){
+        //     divsayisi[i].innerHTML="Div siralamasi" + (i+1)
+        // }
+
+        // var bodymiz=document.body;
+        // for (i=0; i<4; i++){
+        //     bodymiz.innerHTML +="<p>me</p>"
+        // }s
+        // var paragraflar=document.getElementsByTagName("p");
+        // for(i=0;i<paragraflar.length;i++){
+        //     paragraflar[i].innerHTML="Paragraf Sıralamasi"+" "+( i+1)
+        // }
+
+        // var bodymiz = document.body;
+
+        // for (var i = 0; i < 4; i++) {
+        //     bodymiz.innerHTML += "<p></p>"
+        // }
+
+        // var bodyninCocuklari = bodymiz.childNodes;
+
+        // for (var i = 0; i < bodyninCocuklari.length; i++) {
+        //     bodyninCocuklari[i].innerHTML = "p" + (i)
+        //     //    document.body.innerHTML+=bodyninCocuklari[i].nodeName +" "
+        // }
+
+        var header = document.getElementsByTagName("header");
+
+        for (var i = 0; i < 4; i++) {
+            header[0].innerHTML += "<p></p>"
+        }
+
+        var headerinCocuklari = header[0].childNodes;
+
+        for (var i = 0; i < headerinCocuklari.length; i++) {
+            headerinCocuklari[i].innerHTML = "p" + (i)
+
+        }
+    </script>
+</body>
+
+</html>

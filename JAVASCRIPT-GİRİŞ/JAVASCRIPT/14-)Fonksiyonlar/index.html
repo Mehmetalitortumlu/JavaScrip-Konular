@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonksiyonlar</title>
+</head>
+
+<body>
+
+
+    <script>
+        //function defalarca aynı kodu yazmamak adına olusturulmus bir disiplini saglayan olusum daha az kod satırı yazarak daha cok islem yapabiliriz.
+
+
+      /*   function selamver() {
+           document.write("Selam Naber"+"<br>")
+        }
+        selamver()
+        selamver()
+        selamver()
+        selamver()
+        selamver()  parametre almayan fonksiyon.*/
+        
+    /*    function selamVer(isim){
+            document.write(isim +" selam naber?" +"<br>")
+        }
+        selamVer("Mehmet")
+        selamVer("Ahmet") */
+
+       /* function selamVer(isim1,isim2="isim girilmedi"){
+            document.write(isim1 +" ve "+ isim2 +" nasılsınız")
+        }
+        selamVer("Kaan", " Fatih ") */
+
+      /*  function yasHesapla(isim,dogumTarihi){
+            document.write(isim+ (2022-dogumTarihi)+ " yaşında"+"<br>")
+        }
+        yasHesapla("mehmet ",1998)
+        yasHesapla("ahmet ",2000) */
+
+
+        // var isim= prompt("lütfen isminizi yaziniz")
+        // var dogumTarihi=prompt("dogum tarihini yaziniz")
+        // function yasbildi( ){
+        //     document.write("<br>"+isim + "<br>" + (2022- dogumTarihi + " yasında"))
+        // }
+        // yasbildi(isim, dogumTarihi) 
+      
+          /*  function carp(sayi1,sayi2){
+                return sayi1*sayi2
+            }
+            document.write(5* carp(5,6))
+            console.log(carp(5,7)) */
+
+         /*   function isimVeSoyisim(isim,soyisim){
+                return isim+" "+soyisim;
+            }
+
+            document.write(isimVeSoyisim("Mehmet"," Ali")); */
+
+            function tekMiCiftMi(sayi){
+                if(sayi%2==0){
+                    return "Çift Sayıdır.";
+                } else {
+                    return "Tek Sayıdır.";
+                }
+            }
+            document.write(tekMiCiftMi(1))
+
+            for (var i=0; i<19;i++){
+                document.write(i+ " sayisi " + tekMiCiftMi(i)+"<br>")
+            }
+
+    </script>
+</body>
+
+</html>

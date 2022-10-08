@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="bolum1">
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p> 
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+
+
+
+    <script>
+    //   var bolum1Cocuk=document.getElementsByClassName("bolum1")[0];
+
+        // if(bolum1Cocuk.hasChildNodes()){
+        //     document.body.innerHTML +="Çocuk var"
+        // }else{
+        //     document.body.innerHTML +="Çocuk yok"
+
+        // }
+
+        // var paragraflar=document.getElementsByTagName("p");
+        // paragraflar[0].parentNode.innerHTML += "<p> Paragraf3 </p>"
+
+        // var paragraflar= document.getElementsByTagName('p');
+        // paragraflar[1].innerHTML="Mehmet"
+
+        var divimiz= document.getElementsByClassName("bolum1")[0]; 
+        // console.log(divimiz.childNodes.length)
+        // console.log(divimiz.childElementCount) element sayisi
+        // divimiz.lastElementChild.innerHTML="mehmet" son eleman
+
+        for(var i=0; i<divimiz.childElementCount;i++){
+            divimiz.getElementsByTagName("p")[i].innerHTML="degistirildi" 
+        }
+    </script>
+</body>
+
+</html>
